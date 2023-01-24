@@ -1,0 +1,82 @@
+/* calender*/.container{
+    
+    background-color: rgb(46, 204, 32);
+    padding:10px;
+    width:450px;
+    font-size: 20px;
+    margin:50px;
+}
+.chandrika{
+    display :grid;
+   grid-template-columns: repeat(7,50px);
+    background-color: rgb(216, 240, 8);
+    width:400px;
+    height:40px;
+    padding-top:10px;
+}
+.harika{
+    display :grid;
+    grid-template-columns: repeat(7,50px);
+   grid-row-gap:10px;
+   
+   
+}
+h1{
+    text-align:center;
+}
+.date-1{
+    grid-column: 3/3;
+}
+/*text animation*/
+body{
+    text-align: center;
+}
+#container{
+    
+    color:#999;
+    font-size: 40px;
+    font-weight:bolder;
+    padding-top:20px;
+    position:fixed;
+    width:25%;
+    bottom:45%;
+    display:block;
+    border:1px solid black;
+    padding-bottom:30px;
+    margin-left: 60%;
+
+}
+#roll {
+    height:50px;
+    overflow:hidden;
+ }
+ #roll > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  #roll  div:first-child {
+    animation: show 5s linear infinite;
+}
+#roll  div div {
+    background:#42c58a;
+}
+#roll  div:first-child div {
+    background:#4ec7f3;
+}
+#roll  div:last-child div {
+    background:#DC143C;
+}
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+}
+
